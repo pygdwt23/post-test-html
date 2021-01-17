@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
   <title>Formulir Pendaftaran</title>
 </head>
 <body>
-  <h2>FORMULIR PENDAFTARAN</h2>
-  <div class="ktp">
-    <h3>I. KETERANGAN PRIBADI</h3>
+  <div class="container">
+
+    <h1>FORMULIR PENDAFTARAN DRIVER</h1>
+    <div class="ktp">
+    <h2>I. KETERANGAN PRIBADI</h2>
     <form action="" method="POST">
       <label>Nama Lengkap :</label>
-      <input type="text"><br>
+      <input type="text" class="form-control"><br>
       <p></p>
       <label>Nama Panggilan :</label>
-      <input type="text"><br>
+      <input type="text" class="form-control"><br>
       <p></p>
       <label>Jenis Kelamin  :</label>
-      <input type="radio" name="sex">Laki-Laki
-      <input type="radio" name="sex">Perempuan
+      <input type="radio" name="sex" class="input-radio">Laki-Laki
+      <input type="radio" name="sex" class="input-radio">Perempuan
       <p></p>
       <label>Tempat Lahir :</label><br>
-      <textarea cols="50" rows="10"></textarea>
+      <textarea cols="50" rows="10" class="input-textarea"></textarea>
       <p></p>
       <label>Tanggal Lahir  :</label>
-      <input type="date" >
+      <input type="date" class="form-control">
       <p></p>
       <label>Agama  :</label>
-      <select>
+      <select class="form-control">
         <option>-- Pilih Agama --</option>
         <option>Islam</option>
         <option>Katholik</option>
@@ -37,14 +40,14 @@
       </select>
       <p></p>
       <label>Kewarganegaraan  :</label>
-      <input type="radio" name="kwn">WNI
-      <input type="radio" name="kwn">WNA
+      <input type="radio" name="kwn" class="input-radio">WNI
+      <input type="radio" name="kwn" class="input-radio">WNA
       <p></p>
       <label>Anak Ke- :</label>
-      <input type="text">
+      <input type="number" class="form-control">
       <p></p>
       <label>Jumlah Saudara :</label>
-      <input type="text">
+      <input type="number" class="form-control">
       <p></p>
       <label>Status :</label>
       <input type="radio" name="status">Kawin
@@ -53,28 +56,31 @@
       <label>Jenis SIM  :</label>
       <input type="text">
       <p></p>
-    
+      
     </form>
   </div>
   <div class="kttl">
-    <h3>II. KETERANGAN TEMPAT TINGGAL</h3>
+    <h2>II. KETERANGAN TEMPAT TINGGAL</h2>
     <form action="">
       <label>Alamat Lengkap :</label><br>
-      <textarea cols="50" rows="10"></textarea>
+      <textarea cols="50" rows="10" class="input-textarea"></textarea>
       <p></p>
       <label>No. KTP  :</label>
-      <input type="text">
+      <input type="text" class="form-control">
       <p></p>
       <label>No. Telp / HP  :</label>
-      <input type="text">
+      <input type="text" class="form-control">
       <p></p>
-      <label>Alamat lain yang dapat dihubungi</label>
-      <textarea cols="50" rows="10"></textarea>
+      <label>Alamat lain yang dapat dihubungi :</label><br>
+      <textarea cols="50" rows="10" class="input-textarea"></textarea>
       <p></p>
       <label>No. Telp / HP Lain  :</label>
-      <input type="text">
+      <input type="text" class="form-control">
+      <p></p>
 
+      <button type="submit" class="btn-daftar">DAFTAR</button>
     </form>
   </div>
+</div>
 </body>
 </html>
